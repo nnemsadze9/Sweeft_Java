@@ -9,10 +9,10 @@ public class Main {
     public static void main(String[] args) throws MyDataStructureException {
         //1
         System.out.println("Test cases of first task:");
-        System.out.println(singleNumber(new int[]{2,3,2,4,1,6,7,8}));
-        System.out.println(singleNumber(new int[]{1,3,2,4,1,2,7,7}));
-        System.out.println(singleNumber(new int[]{2,3,2,4,3,4,4,8}));
-        System.out.println(singleNumber(new int[]{2,3,2,1,1,6,6,3}));
+        System.out.println(singleNumber(new int[]{2,3,2,3,7,8,1,6,6,7,8}));//4
+        System.out.println(singleNumber(new int[]{1,3,2,4,1,2,7,4,7}));//3
+        System.out.println(singleNumber(new int[]{2,3,2,4,3,4,4,8}));//8
+        System.out.println(singleNumber(new int[]{2,3,2,1,1,6,6,3}));//-1
 
         //2
         System.out.println("Test cases of second task:");
@@ -38,9 +38,9 @@ public class Main {
 
         //5
         System.out.println("Test cases of fifth task:");
-        System.out.println(countVariants(5));
-        System.out.println(countVariants(6));
-        System.out.println(countVariants(7));
+        System.out.println(countVariants(5));//8
+        System.out.println(countVariants(6));//13
+        System.out.println(countVariants(7));//21
 
         //6
         System.out.println("Test cases of sixth task:");
@@ -126,4 +126,6 @@ public class Main {
         }
         return dp[stairsCount];
     }
+
+    //6 It is in package called entity.
 }
